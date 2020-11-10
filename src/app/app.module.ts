@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { SharedModule } from './shared/shared.module';
 import { HttpErrorInterceptor } from 'src/services/interceptors/Base/http-interceptor';
 import { TokenInterceptor } from 'src/services/interceptors/token/token';
 
@@ -17,7 +16,6 @@ import { TokenInterceptor } from 'src/services/interceptors/token/token';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule,
     BrowserAnimationsModule
   ],
   providers: [
